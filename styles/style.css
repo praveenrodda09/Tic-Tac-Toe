@@ -1,0 +1,38 @@
+/* style.css */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+    width: 310px;
+  }
+  
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  .cell.taken {
+    pointer-events: none;
+  }
+  
+  #reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
